@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/azulescuro</item>
+        <item name="colorPrimaryDark">@color/azulescuro</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.Fullscreen" parent="android:Theme.Holo.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ProgressTheme">
+        <item name="colorAccent">@color/colorProgress</item>
+    </style>
+
+
+</resources>

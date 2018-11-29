@@ -1,0 +1,319 @@
+/* Campos obrigat�rios */
+.obrigatorio{
+	color: red;
+	font-size: 12px;
+}
+
+/* Gambiarra do ponto */
+.copyright{
+  padding: 50px;
+}
+
+/* Tela de Erro */
+.TeladeErro {
+  background-color: #005fa3;
+}
+.page-wrap {
+  min-height: 100vh;
+}
+
+/* Cadastro de Usuário */
+.btn-secondary {
+  background-color:#005fa3;
+  border-color: #005fa3;
+
+}
+.voltar{
+  display: flex;
+  transform:translateX(10%);
+}
+/* Tela de Tecnologias */
+.table-earning thead th {
+  background-color: #005fa3;
+}
+.table-data-feature .item i{
+  color: #005fa3;
+  
+}
+.table-earning tbody tr:hover td {
+  color: #005fa3;
+  cursor: pointer;
+}
+.au-btn--submit{
+  border: 0;
+}
+@media(max-width: 991px){
+  .form-header{
+    display: none;
+  }
+}
+@media(max-width: 990px){
+  .t{
+    display: none;
+  }
+}
+
+
+
+/* Tela de Cadastro de tecnologias */
+.card-tecnologias {
+  margin-top: 5%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.btn-secundary{
+  background-color: #005fa3;
+  color: white;
+}
+.btn-secundary:hover{
+  background-color: #009cde;
+  
+}
+.card-header-tecnologias{
+  /* background-color: #009cde; */
+  
+  background-color: #005fa3;
+  color: white;
+}
+.btn-danger{
+  background-color: #005fa3;
+  border-color: #005fa3;
+}
+.btn-danger:hover{
+ background-color: #009cde;
+
+} 
+ 
+
+
+/* Tela de projetos */
+.menu-sidebar__content{
+  background-color: #005fa3;
+}
+.navbar-sidebar .navbar__list li a{
+  color: white;
+}
+.navbar-sidebar .navbar__list li.active > a{
+  color: white;
+}
+.menu-sidebar .logo{
+  background-color: #005fa3;
+  border-right: 0px solid #e5e5e5;
+}
+.border-primary {
+  border-color: white!important;
+}
+.page-link{
+  color: #005fa3;
+}
+
+ .btn-primary{
+  background-color: #D8D8D8;
+  color: black;
+}
+.au-btn--submit{
+  background-color: #005fa3;
+}
+
+.btn-info{
+  background-color: #E6E6E6;
+  color: black;
+  border-color: white;
+  width: 100%;
+}
+.btn-info:hover{
+  background-color: #005fa3;
+}
+.card-header{
+  background-color: #005fa3;
+  color: white;
+}
+
+.modal-header{
+  display: 0;
+}
+ .btn-warning{
+  background-color: #005fa3;
+  color: white;
+  border-color: #005fa3;
+}
+.btn-warning:hover{
+  background-color: #009cde;
+  border-color: #005fa3;
+}
+.btn-success:hover{
+  background-color: #009cde;
+  border-color: #005fa3;
+  color: black;
+}
+ .btn-success{
+  background-color: #005fa3;
+  color: white;
+  border-color: #005fa3;
+}
+ .pro{
+  background-color: #005fa3;
+  color: white;
+ }
+ .pro:hover{
+   background-color: #005fa3;
+   color: white;
+ }
+
+
+
+/* Tela de Recuperação de senha */
+
+
+
+
+
+
+/* Tela de login 2*/
+.login-wrap {
+  max-width: 540px;
+ 
+  margin: 0 auto; 
+}
+
+.login-content {
+ 
+  padding: 39px 30px 20px;
+ 
+}
+
+
+
+/* Header mobile */
+.header-mobile{
+  background-color: #005fa3;
+}
+.header-mobile .navbar-mobile .navbar-mobile__list{
+  background: #005fa3;
+}
+.header-mobile .navbar-mobile .navbar-mobile__list li a{
+  color: white;
+  border-bottom: 0px solid #e6e6e6;
+} 
+.navbar-mobile-sub__list {
+  display: none;
+  padding-left: 30px;
+  background: #005fa3;
+}
+.header-mobile .hamburger{
+  background-color: #005fa3;
+}
+
+
+
+
+
+/* Tela de login */
+.telaLogin {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #005fa3; 
+  }
+  .login{
+	background-color: white;
+    border: 10px solid #fff;
+    height: 80vh;
+    width: 32vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 35px;
+    border-radius: 1%;
+    padding-top: 6%;
+    font-family: Open Sans;
+}
+
+  
+
+.card-projetos {
+    margin-top: 4%;   
+}
+.itensMenu ::placeholder{
+    color: #E6E6E6;
+}
+@media (max-width: 400px) 
+{
+  #logo
+  
+   {
+    width: 200px;
+    height: 150px;
+   }
+}
+@media (max-width:500px){
+  .fundo{
+    margin-left: 1%;
+  }
+}
+@media (max-width:800px){
+  .fundo{
+    margin-left: 3%;
+  }
+}
+@media (max-width:400px){
+  .fundo{
+    margin-left: 0%;
+  }
+}
+.itensMenu img{
+    margin-left: -43%;
+    margin-top: 0%;
+    width: 350px;
+    height: 225px;
+}
+.itensMenu button{
+    background-color: #009cde;
+    border: #009cde;
+    margin-left: 1%;
+}
+
+
+
+
+/* Bootstrap tela de login*/
+ .form-signin {
+    /* max-width: 330px; */
+    padding: 15px;
+    margin: 0 auto;
+    
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+    color: #009cde;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    
+    
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+
+ 
