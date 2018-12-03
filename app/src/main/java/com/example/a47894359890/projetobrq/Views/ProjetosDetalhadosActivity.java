@@ -87,13 +87,15 @@ public class ProjetosDetalhadosActivity extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ProjetosDetalhadosActivity.this,ProjetoActivity.class);
-                startActivity(intent);
+                voltarTela();
             }
         });
 
 
 
+    }
+    private void voltarTela(){
+        this.finish();
     }
 
     private void carregarListaProectDetalhado(OkHttpClient okHttpClient) {
