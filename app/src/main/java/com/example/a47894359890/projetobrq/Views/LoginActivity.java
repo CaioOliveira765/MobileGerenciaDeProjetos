@@ -54,6 +54,7 @@ public class LoginActivity extends AppCompatActivity {
 
         edEmail.setText("admin@email.com");
         edSenha.setText("admin");
+
         edEsqueceu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +80,7 @@ public class LoginActivity extends AppCompatActivity {
                             ed.apply();
                             Intent intent = new Intent(LoginActivity.this, TecnologiasActivity.class);
                             startActivity(intent);
+                            finish();
                         }else
                             erroLogin.setVisibility(View.VISIBLE);
                             erroLogin.setText("Dados Inválidos.");
@@ -86,6 +88,8 @@ public class LoginActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<ResponseBody> call, Throwable t) {
+                        erroLogin.setVisibility(View.VISIBLE);
+                        erroLogin.setText("Erro de Login" );
                         Toast.makeText(getApplicationContext(), "Erro: " + t.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });

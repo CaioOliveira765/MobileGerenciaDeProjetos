@@ -7,13 +7,12 @@ import java.util.List;
 public class Projeto implements Serializable{
     private String nome;
     private Long id;
-//    private Date dataInicio;
-//    private Date dataFinal;
+    private String dataInicio;
+    private String dataFim;
     private int horas;
     private String responsavelBRQ;
     private String responsavelCliente;
     private String descricao;
-    // private Tecnologias tecnologia;
     private List<Tecnologias> tecnologia;
     private Status status;
     private Usuario usuarioCriador;
@@ -88,5 +87,21 @@ public class Projeto implements Serializable{
 
     public void setUsuarioCriador(Usuario usuarioCriador) {
         this.usuarioCriador = usuarioCriador;
+    }
+
+    public String getDataInicio() {
+        return dataInicio;
+    }
+
+    public void setDataInicio(String dataInicio) {
+        this.dataInicio = dataInicio;
+    }
+
+    public String getDataFim() {
+        return dataFim;
+    }
+
+    public void setDataFim(String dataFim) {
+        this.dataFim = dataFim;
     }
 }

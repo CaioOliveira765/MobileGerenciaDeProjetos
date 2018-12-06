@@ -1,97 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/branco">
+    android:fillViewport="true">
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Views.ProjetoActivity"
-        tools:layout_editor_absoluteY="25dp">
+        android:background="@color/branco">
+
 
         <View
-            android:id="@+id/view"
-            android:layout_width="wrap_content"
-            android:layout_height="239dp"
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:background="@drawable/gradient_bg"
-            app:layout_constraintStart_toStartOf="@+id/ListaId"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="0dp"
-            android:layout_height="97dp"
-            android:layout_marginBottom="64dp"
-            android:layout_marginEnd="53dp"
-            android:layout_marginRight="53dp"
-            app:layout_constraintBottom_toTopOf="@+id/searchView"
+            app:layout_constraintBottom_toTopOf="@+id/ListaId"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/voltarProj"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo_branco" />
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageButton
+            android:id="@+id/voltarTec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:src="@drawable/voltar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/ProjetoTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="32dp"
             android:text="Projetos"
             android:textColor="#ffff"
             android:textSize="27sp"
-            app:layout_constraintBottom_toTopOf="@+id/searchView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <SearchView
             android:id="@+id/searchView"
-            android:layout_width="0dp"
-            android:layout_height="44dp"
-            android:layout_marginBottom="33dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:background="@drawable/bordasearch"
-            app:layout_constraintBottom_toTopOf="@+id/ListaId"
+            android:clickable="true"
+            android:queryBackground="@android:color/transparent"
+            android:submitBackground="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintStart_toStartOf="parent" />
+
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/ListaId"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="184dp"
             android:background="@color/branco"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchView" />
-
-        <ImageButton
-            android:id="@+id/voltarProj"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="6dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="6dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="36dp"
-            android:background="?android:selectableItemBackground"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/voltar" />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </android.support.constraint.ConstraintLayout>

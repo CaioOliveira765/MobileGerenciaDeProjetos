@@ -30,7 +30,6 @@ public class ProjetoHolder extends RecyclerView.ViewHolder {
                 final Activity context = (Activity)view.getContext();
                 final Intent intent = new Intent(context, ProjetosDetalhadosActivity.class);
                 intent.putExtra("projetoID", idProjeto);
-
                 context.startActivity(intent);
                 Log.d("idTec", idProjeto.toString());
             }

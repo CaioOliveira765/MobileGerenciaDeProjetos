@@ -32,7 +32,6 @@ public class TecnologiaViewHolder extends RecyclerView.ViewHolder {
                 final Activity context = (Activity)view.getContext();
                 final Intent intent = new Intent(context, ProjetoActivity.class);
                 intent.putExtra("tecnologiaId", tecnologiaId);
-                context.startActivityForResult(intent, 2);
                 context.startActivity(intent);
             }
         });

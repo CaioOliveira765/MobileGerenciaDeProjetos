@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.SearchView;
 import android.widget.Toast;
@@ -39,7 +40,7 @@ public class ProjetoActivity extends Activity {
     private SharedPreferences sharedPreferences;
     private Long tecnologiaId;
     private ProjetoAdapter projetoAdapter;
-    private ImageButton imageView;
+    private ImageButton voltar;
 
 
     @Override
@@ -49,7 +50,7 @@ public class ProjetoActivity extends Activity {
 
         recyclerView = findViewById(R.id.ListaId);
         searchView = findViewById(R.id.searchView);
-        // imageView = findViewById(R.id.voltarProj);
+        voltar = findViewById(R.id.voltarTec);
 
         Intent intent = getIntent();
         tecnologiaId = intent.getLongExtra("tecnologiaId", 0);
@@ -57,13 +58,12 @@ public class ProjetoActivity extends Activity {
         sharedPreferences = getSharedPreferences(AppUtils.SHARED_KEY, Context.MODE_PRIVATE);
         token = sharedPreferences.getString("token", "");
 
-//        imageView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent1 = new Intent(ProjetoActivity.this, TecnologiasActivity.class);
-//                startActivity(intent1);
-//            }
-//        });
+        voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fecharTela();
+           }
+       });
 
         sharedPreferences = getSharedPreferences(AppUtils.SHARED_KEY, Context.MODE_PRIVATE);
         token = sharedPreferences.getString("token", "");
@@ -83,6 +83,10 @@ public class ProjetoActivity extends Activity {
         buscarSearch();
     }
 
+    private void fecharTela(){
+        this.finish();
+    }
+
     private void buscarSearch() {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -97,6 +101,11 @@ public class ProjetoActivity extends Activity {
                 return false;
             }
       });
+        searchView.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                searchView.setIconified(false);
+            }
+        });
     }
 
     private void carregarListarProjetos(OkHttpClient okHttpClient) {

@@ -26,12 +26,11 @@
             app:layout_constraintHorizontal_bias="0.464"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_alignParentLeft="true" />
-
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="384dp"
-            android:layout_height="109dp"
-            android:layout_marginTop="28dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -52,39 +51,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            app:layout_constraintTop_toBottomOf="@+id/view2"
-            android:layout_height="393dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="0dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="164dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="0dp">
+            tools:layout_editor_absoluteX="0dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="8dp"
+                android:background="@drawable/border">
 
                 <TextView
+                    android:id="@+id/idProj"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Id :"
-                    android:textColor="#000000"
                     android:layout_marginLeft="0dp"
-                    android:textSize="12dp"/>
+                    android:padding="4dp"
+                    android:text="Id: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
 
                 <TextView
                     android:id="@+id/idBanco"
@@ -92,269 +93,47 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="0dp"
                     android:hint="7777"
-                    android:textColor="#000000"
-                    android:textSize="12dp" />
+                    android:padding="2dp"
+                    android:textColor="#545454"
+                    android:textSize="20dp" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:orientation="horizontal"
-                android:padding="1dp">
+                android:padding="1dp"
+                android:background="@drawable/border">
+                >
 
                 <TextView
                     android:id="@+id/nomeProj"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nome :"
-                    android:textColor="#000000"
                     android:layout_marginLeft="0dp"
-                    android:textSize="12dp"/>
+                    android:padding="4dp"
+                    android:text="Nome: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
 
                 <TextView
                     android:id="@+id/nomeBanco"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="0dp"
                     android:hint="Projeto 2"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12dp" />
+                    android:textColor="#545454"
+                    android:textSize="20dp" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:padding="1dp">
-
-                <TextView
-                    android:id="@+id/tecnologiaProj"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tecnologias :"
-                    android:textColor="#000000"
-                    android:layout_marginLeft="0dp"
-                    android:textSize="12dp" />
-
-                <TextView
-                    android:id="@+id/tecnologiaBanco"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:hint="Java"
-                    android:padding="4dp"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:padding="1dp">
-
-                <TextView
-                    android:id="@+id/horasProj"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Horas :"
-                    android:textColor="#000000"
-                    android:layout_marginLeft="0dp"
-                    android:textSize="12dp" />
-
-                <TextView
-                    android:id="@+id/horasBanco"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:hint="200 horas"
-                    android:padding="4dp"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12dp"
-
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:padding="1dp">
-
-                <TextView
-                    android:id="@+id/dataiProj"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Data inicio :"
-                    android:textColor="#000000"
-                    android:layout_marginLeft="0dp"
-                    android:textSize="12dp" />
-
-                <TextView
-                    android:id="@+id/dataiBanco"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:hint="17/11/2018"
-                    android:padding="4dp"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12dp"
-
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:padding="1dp">
-
-                <TextView
-                    android:id="@+id/datafProj"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Data Final :"
-                    android:textColor="#000000"
-                    android:layout_marginLeft="0dp"
-                    android:textSize="12dp" />
-
-                <TextView
-                    android:id="@+id/datafBanco"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:hint="31/12/2018"
-                    android:padding="4dp"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:padding="1dp">
-
-                <TextView
-                    android:id="@+id/statusProj"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status :"
-                    android:textColor="#000000"
-                    android:layout_marginLeft="0dp"
-                    android:textSize="12dp"
-
-                    />
-
-                <TextView
-                    android:id="@+id/statusBanco"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:hint="Em andamento"
-                    android:padding="4dp"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:padding="1dp">
-
-                <TextView
-                    android:id="@+id/responsavelbProj"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Responsalvel Brq :"
-                    android:textColor="#000000"
-                    android:layout_marginLeft="0dp"
-                    android:textSize="12dp"
-
-                    />
-
-                <TextView
-                    android:id="@+id/responsavelbBanco"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:hint="Luana"
-                    android:padding="4dp"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:padding="1dp">
-
-                <TextView
-                    android:id="@+id/responsavelcProj"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Responsalvel Cliente :"
-                    android:textColor="#000000"
-                    android:layout_marginLeft="0dp"
-                    android:textSize="12dp"
-
-                    />
-
-                <TextView
-                    android:id="@+id/responsavelcBanco"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:hint="Luis"
-                    android:padding="4dp"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="310dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="true"
@@ -362,16 +141,260 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:orientation="vertical"
                 android:padding="1dp"
-                android:paddingTop="10dp">
+                android:background="@drawable/border">
+                >
+
+                <TextView
+                    android:id="@+id/tecnologiaProj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="Tecnologias: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tecnologiaBanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:hint="Java"
+                    android:padding="4dp"
+                    android:textColor="#545454"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:background="@drawable/border">
+                >
+
+                <TextView
+                    android:id="@+id/horasProj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="Horas: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/horasBanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:hint="200 horas"
+                    android:padding="2dp"
+                    android:textColor="#545454"
+                    android:textSize="20dp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:background="@drawable/border">
+                >
+
+                <TextView
+                    android:id="@+id/dataiProj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="Data inicio: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/dataiBanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:hint="17/11/2018"
+                    android:padding="4dp"
+                    android:textColor="#545454"
+                    android:textSize="20dp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:background="@drawable/border">
+                >
+
+                <TextView
+                    android:id="@+id/datafProj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="Data Final: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/datafBanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:hint="31/12/2018"
+                    android:padding="4dp"
+                    android:textColor="#545454"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:background="@drawable/border">
+                >
+
+                <TextView
+                    android:id="@+id/statusProj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="Status: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/statusBanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:hint="Em andamento"
+                    android:padding="4dp"
+                    android:textColor="#545454"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:background="@drawable/border">
+                >
+
+                <TextView
+                    android:id="@+id/responsavelbProj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="Responsalvel Brq: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/responsavelbBanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:hint="Luana"
+                    android:padding="4dp"
+                    android:textColor="#545454"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:background="@drawable/border">
+                >
+
+                <TextView
+                    android:id="@+id/responsavelcProj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="Responsalvel Cliente: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/responsavelcBanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:hint="Luis"
+                    android:padding="4dp"
+                    android:textColor="#545454"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/border">
+                >
 
                 <TextView
                     android:id="@+id/descricaoProj"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="0dp"
-                    android:text="Descrição :"
+                    android:text="Descricao: "
+                    android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="12dp"
+                    android:textSize="20dp"
 
                     />
 
@@ -380,9 +403,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="0dp"
-                    android:text="Aqui vai a desrição"
-                    android:textColor="#000000"
-                    android:textSize="12dp" />
+                    android:text="Aqui vai a desri��o"
+                    android:textColor="#545454"
+                    android:textSize="20dp" />
 
             </LinearLayout>
 

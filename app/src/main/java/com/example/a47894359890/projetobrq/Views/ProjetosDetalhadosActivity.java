@@ -41,7 +41,7 @@ public class ProjetosDetalhadosActivity extends AppCompatActivity {
     private TextView tecnolgias;
     private TextView horas;
     private TextView dataInicio;
-    private TextView dataFinal;
+    private TextView dataFim;
     private TextView status;
     private TextView respBrq;
     private TextView respCliente;
@@ -60,7 +60,7 @@ public class ProjetosDetalhadosActivity extends AppCompatActivity {
         tecnolgias = findViewById(R.id.tecnologiaBanco);
         horas = findViewById(R.id.horasBanco);
         dataInicio = findViewById(R.id.dataiBanco);
-        dataFinal = findViewById(R.id.datafBanco);
+        dataFim = findViewById(R.id.datafBanco);
         status = findViewById(R.id.statusBanco);
         respBrq = findViewById(R.id.responsavelbBanco);
         respCliente = findViewById(R.id.responsavelcBanco);
@@ -110,8 +110,8 @@ public class ProjetosDetalhadosActivity extends AppCompatActivity {
                     nome.setText(listaProject.getNome());
                     tecnolgias.setText(listaProject.getTecnologia().toString());
                     horas.setText(String.valueOf(listaProject.getHoras()));
-                    //dataInicio.setText(listaProject);
-                    //dataFinal.setText(listaProject.get);
+                    dataInicio.setText(listaProject.getDataInicio());
+                    dataFim.setText(listaProject.getDataFim());
                     status.setText(listaProject.getStatus().getNome());
                     respBrq.setText(listaProject.getResponsavelBRQ());
                     respCliente.setText(listaProject.getResponsavelCliente());

@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.CollapsibleActionView;
+import android.view.View;
 import android.widget.SearchView;
 import android.widget.Toast;
 
@@ -81,6 +82,11 @@ public class TecnologiasActivity extends AppCompatActivity {
                 //coloca o filtro no adapter
                 tecnologiAdapter.filtraPorNome(TecBuscada);
                 return false;
+            }
+        });
+        searchView.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                searchView.setIconified(false);
             }
         });
     }
