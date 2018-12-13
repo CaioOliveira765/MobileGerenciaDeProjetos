@@ -1,6 +1,7 @@
 package com.example.a47894359890.projetobrq.Views;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.CollapsibleActionView;
 import android.view.View;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.a47894359890.projetobrq.R;
@@ -39,6 +41,7 @@ public class TecnologiasActivity extends AppCompatActivity {
     private OkHttpClient  okHttpClient;
     SharedPreferences sharedPreferences;
     private TecnologiAdapter tecnologiAdapter;
+    private TextView voltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,7 @@ public class TecnologiasActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.ListId);
         searchView = findViewById(R.id.pesquisaId);
+        voltar = findViewById(R.id.voltarPLogin);
 
         sharedPreferences = getSharedPreferences(AppUtils.SHARED_KEY, Context.MODE_PRIVATE);
         token = sharedPreferences.getString("token", "");
@@ -62,8 +66,18 @@ public class TecnologiasActivity extends AppCompatActivity {
             }
         }).build();
 
+        voltar.setText("sair");
+
         carregarLista(okHttpClient);
         buscarSearchView();
+
+        voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TecnologiasActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

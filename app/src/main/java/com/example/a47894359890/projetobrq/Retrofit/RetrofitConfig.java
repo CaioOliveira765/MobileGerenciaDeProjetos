@@ -10,7 +10,8 @@ public class RetrofitConfig {
 
     //atributo
     private final Retrofit retrofit;
-    private String urlConexao = "http://192.168.4.244:8080/gerenciadepjs/rest/";
+    //private String urlConexao = "http://192.168.4.244:8080/gerenciadepjs/rest/";
+    private String urlConexao = "http://brqgerencia.projeto.senai/gerenciadepjs/rest/";
 
     public RetrofitConfig() {
         this.retrofit = new Retrofit.Builder().baseUrl(urlConexao)

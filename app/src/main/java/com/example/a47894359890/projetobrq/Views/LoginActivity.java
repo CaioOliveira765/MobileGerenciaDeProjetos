@@ -52,9 +52,6 @@ public class LoginActivity extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences(AppUtils.SHARED_KEY, Context.MODE_PRIVATE);
 
-        edEmail.setText("admin@email.com");
-        edSenha.setText("admin");
-
         edEsqueceu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +77,6 @@ public class LoginActivity extends AppCompatActivity {
                             ed.apply();
                             Intent intent = new Intent(LoginActivity.this, TecnologiasActivity.class);
                             startActivity(intent);
-                            finish();
                         }else
                             erroLogin.setVisibility(View.VISIBLE);
                             erroLogin.setText("Dados Inválidos.");
